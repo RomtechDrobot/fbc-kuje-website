@@ -152,6 +152,10 @@ header {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
   transition: 0.3s ease;
 }
+.focus-icon {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
 .focus-card h3 {
   margin-bottom: 15px;
   font-size: 22px;
@@ -273,6 +277,14 @@ footer {
 }
 .footer-contact {
   margin-bottom: 8px;
+}
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.email-icon {
+  display: block;
 }
 .footer-bottom  {
   width: 100%;
