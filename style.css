@@ -400,6 +400,9 @@ footer {
   color: var(--secondary-color);
   margin-bottom: 10px;
 }
+.phone-icon {
+  display: block;
+}
 .programs {
   padding: 90px 5%;
   text-align: center;
