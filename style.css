@@ -304,6 +304,102 @@ footer {
   font-size: 28px;
   cursor: pointer;
 }
+.page-hero {
+  min-height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 5%;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+.page-hero p:first-child {
+  color: var(--accent-color);
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+.page-hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.page-hero p:last-child {
+  max-width: 650px;
+  margin: 0 auto;
+}
+.about-intro {
+  padding: 90px 5%;
+}
+.about-content {
+  max-width: 850px;
+  margin: 0 auto;
+}
+.section-label {
+  color: var(--accent-color);
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+.about-content h2 {
+  color: var(--secondary-color);
+  font-size: 38px;
+  margin-bottom: 25px;
+}
+.about-content p:not(.section-label) {
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+.mission-vision {
+  padding: 80px 5%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  background-color: var(--light-color);
+}
+.mission-card
+.vision-card {
+  padding: 40px;
+  background-color: var(--white-color);
+  border-radius: 10px;
+  border: 1px solid #E5E7EB;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+.mission-card h2
+.vision-card h2 {
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+}
+.values {
+  padding: 90px 5%;
+  text-align: center;
+}
+.values-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+.value-card {
+  padding: 30px 20px;
+  border: 1px solid #E5E7EB;
+  border-radius: 10px;
+  background-color: var(--white-color);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+.value-card:hover {
+  transform: translateY(-5px);
+}
+.value-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.value-icon h3 {
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
 @media (max-width: 900px) {
   .focus-container {
     grid-template-columns: repeat(2, 1fr);
@@ -347,6 +443,18 @@ footer {
   }
   .scripture blockqoute {
     font-size: 24px;
+  }
+  .mission-vision {
+    grid-template-columns: 1fr;
+  }
+  .values-container {
+    grid-template-columns: 1fr;
+  }
+  .page-hero h1 {
+    font-size: 38px;
+  }
+  .about-content h2 {
+    font-size: 30px;
   }
   .menu-toggle {
     display: block !important;
