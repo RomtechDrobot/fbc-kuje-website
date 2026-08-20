@@ -400,6 +400,37 @@ footer {
   color: var(--secondary-color);
   margin-bottom: 10px;
 }
+.programs {
+  padding: 90px 5%;
+  text-align: center;
+}
+.programs-heading {
+  margin-bottom: 50px;
+}
+.programs-heading h2 {
+  color: var(--accent-color);
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.programs-heading p {
+  font-size: 30px;
+}
+.programs-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.program-card {
+  padding: 30px 20px;
+  border: 1px solid #E5E7EB;
+  border-radius: 10px;
+  background-color: var(--white-color);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+.program-card:hover {
+  transform: translateY(-5px);
+}
 @media (max-width: 900px) {
   .focus-container {
     grid-template-columns: repeat(2, 1fr);
@@ -448,6 +479,9 @@ footer {
     grid-template-columns: 1fr;
   }
   .values-container {
+    grid-template-columns: 1fr;
+  }
+  .programs-container {
     grid-template-columns: 1fr;
   }
   .page-hero h1 {
