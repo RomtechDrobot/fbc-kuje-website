@@ -405,23 +405,27 @@ footer {
 }
 .programs {
   padding: 90px 5%;
-  text-align: center;
 }
 .programs-heading {
   margin-bottom: 50px;
+  text-align: center;
 }
 .programs-heading h2 {
-  color: var(--accent-color);
-  font-size: 14px;
-  letter-spacing: 2px;
+  color: var(--secondary-color);
+  font-size: 40px;
+  margin-bottom: 15px;
 }
 .programs-heading p {
-  font-size: 30px;
+  font-size: 14px;
+  color: var(--accent-color);
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
 }
 .programs-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+  gap: 30px;
 }
 .program-card {
   padding: 30px 20px;
@@ -429,11 +433,28 @@ footer {
   border-radius: 10px;
   background-color: var(--white-color);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
   transition: 0.3s ease;
 }
 .program-card:hover {
   transform: translateY(-5px);
 }
+.program-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--primary-color);
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+.program-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
 @media (max-width: 900px) {
   .focus-container {
     grid-template-columns: repeat(2, 1fr);
@@ -484,8 +505,14 @@ footer {
   .values-container {
     grid-template-columns: 1fr;
   }
+  .programs {
+    padding: 60px 5%;
+  }
   .programs-container {
     grid-template-columns: 1fr;
+  }
+  .programs-heading h2 {
+    font-size: 32px;
   }
   .page-hero h1 {
     font-size: 38px;
