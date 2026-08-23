@@ -575,6 +575,40 @@ footer {
 .sermon-content {
   padding: 30px;
 }
+.sermon-category {
+  color: var(--accent-color);
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+.sermon-content h3 {
+  color: var(--secondary-color);
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.sermon-speaker,
+.sermon-date {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.sermon-card audio {
+  width: 100%;
+  margin: 20px 0;
+}
+.download-btn {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+.download-btn:hover {
+  transform: translateY(-3px);
+}
 @media (max-width: 900px) {
   .focus-container {
     grid-template-columns: repeat(2, 1fr);
@@ -645,6 +679,15 @@ footer {
   }
   .events-container {
     grid-template-columns: 1fr;
+  }
+  .sermons {
+    padding: 60px 5%;
+  }
+  .sermons-container {
+    grid-template-columns: 1fr;
+  }
+  .sermon-content h3 {
+    font-size: 22px;
   }
   .menu-toggle {
     display: block !important;
