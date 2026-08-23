@@ -512,6 +512,69 @@ footer {
   font-size: 40px;
   margin-bottom: 15px;
 }
+.event-content {
+  padding: 25px;
+}
+.event-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60px;
+  padding: 10px;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.event-date span:first-child {
+  font-size: 24px;
+  font-weight: bold;
+}
+.event-date span:last-child {
+  font-size: 12px;
+  font-weight: bold;
+}
+.event-content h3 {
+  color: var(--secondary-color);
+  font-size: 22px;
+  margin-bottom: 15PX;
+}
+.event-info {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.event-content p:not(.event-info) {
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+.event-content a {
+  color: var(--accent-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+.event-content a:hover {
+  text-decoration: underline;
+}
+.sermons {
+    padding: 90px 5px;
+}
+.sermons-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.sermon-card {
+  background-color: var(--white-color);
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+.sermon-card:hover {
+  transform: translateY(-5px);
+}
+.sermon-content {
+  padding: 30px;
+}
 @media (max-width: 900px) {
   .focus-container {
     grid-template-columns: repeat(2, 1fr);
@@ -576,6 +639,12 @@ footer {
   }
   .about-content h2 {
     font-size: 30px;
+  }
+  .events {
+    padding: 60px 5%;
+  }
+  .events-container {
+    grid-template-columns: 1fr;
   }
   .menu-toggle {
     display: block !important;
