@@ -609,6 +609,89 @@ footer {
 .download-btn:hover {
   transform: translateY(-3px);
 }
+.gallery {
+  padding: 90px 5%;
+}
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.gallery-item {
+  overflow: hidden;
+  border-radius: 12px;
+}
+.gallery-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  transition: 0,03s ease;
+}
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
+.giving { 
+  padding: 90px 5%;
+}
+.fundraising-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.fundraising-card {
+  background-color: var(--white-color);
+  padding: 30px;
+  border: 1px solid #E5E7EB;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+.fundraising-category {
+  color: var(--accent-color);
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+.fundraising-card h3 {
+  color: var(--secondary-color);
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.fundraising-description {
+  margin-bottom: 25px;
+  line-height: 1.7;
+}
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #E5E7EB;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.progress-fill{
+  width: 30%;
+  height: 100%;
+  background-color: var(--accent-color);
+  border-radius: 10px;
+}
+.outreach-progress {
+  width: 25%;
+}
+.skills-progress {
+  width: 25%;
+}
+.fundraising-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+.fundraising-details p{
+  font-size: 14px; 
+}
+.fundraising-details strong {
+  color: var(--secondary-color);
+}
 @media (max-width: 900px) {
   .focus-container {
     grid-template-columns: repeat(2, 1fr);
@@ -688,6 +771,12 @@ footer {
   }
   .sermon-content h3 {
     font-size: 22px;
+  }
+  .gallery {
+    padding: 60px 5%;
+  }
+  .gallery-container {
+    grid-template-columns: 1fr;
   }
   .menu-toggle {
     display: block !important;
