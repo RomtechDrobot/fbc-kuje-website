@@ -778,6 +778,12 @@ footer {
   .gallery-container {
     grid-template-columns: 1fr;
   }
+  .giving {
+    padding: 60px 5%;
+  }
+  .fundraising-container {
+    grid-template-columns: 1fr;
+  }
   .menu-toggle {
     display: block !important;
     color: red;
