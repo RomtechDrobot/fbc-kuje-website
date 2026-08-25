@@ -669,16 +669,9 @@ footer {
   overflow: hidden;
 }
 .progress-fill{
-  width: 30%;
   height: 100%;
   background-color: var(--accent-color);
   border-radius: 10px;
-}
-.outreach-progress {
-  width: 25%;
-}
-.skills-progress {
-  width: 25%;
 }
 .fundraising-details {
   display: flex;
@@ -691,6 +684,69 @@ footer {
 }
 .fundraising-details strong {
   color: var(--secondary-color);
+}
+.support-btn {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+.giving-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  margin-top: 80px;
+  align-items: center;
+}
+.giving-info-content h2 {
+  color: var(--secondary-color);
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.giving-info-content p:not(.fundraising-category) {
+  line-height: 1.7;
+}
+.bank-details {
+  background-color: var(--white-color);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+.bank-item {
+  padding: 20px 0;
+  border-bottom: 1px solid #E5E7EB;
+}
+.bank-item span {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.bank-item strong {
+  color: var(--secondary-color);
+  font-size: 18px;
+}
+.account-number {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+#copy-btn {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+#copy-btn:hover {
+  transform: translateY(-2px);
 }
 @media (max-width: 900px) {
   .focus-container {
@@ -783,6 +839,17 @@ footer {
   }
   .fundraising-container {
     grid-template-columns: 1fr;
+  }
+  .giving-info {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 60px;
+  }
+  .giving-info-content h2 {
+    font-size: 28px;
+  }
+  .account-number {
+    gap: 10px;
   }
   .menu-toggle {
     display: block !important;
