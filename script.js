@@ -24,3 +24,20 @@ progressBars.forEach(function(bar) {
   const percentage = (raised / goal) * 100;
   bar.style.width = percentage + "%";
 });
+
+const sermonSearch = document.getElementById("sermon-search-input");
+const sermonCards = document.querySelectorAll(".sermon-card");
+
+if (sermonSearch) {
+  sermonSearch.addEventListener("input", function(){
+    const searchText = sermonSearch.value.toLowerCase();
+    sermonCards.forEach(function(card) {
+      const sermonText = card.textContent.toLowerCase();
+      if (sermonText.includes(searchText)) {
+        card.style.display ="";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  });
+}

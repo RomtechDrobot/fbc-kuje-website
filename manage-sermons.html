@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Sermons</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <section class="admin">
+      <div class="section-heading">
+        <p>ADMINISTRATION</p>
+        <h1>Manage Sermons</h1>
+        <p>
+          Add and manage sermons for the fellowship.
+        </p>
+      </div>
+      <div class="sermon-admin">
+        <h2>Add New Sermon</h2>
+        <form id="sermon-form">
+          <div class="form-group">
+            <label for="sermon-title">
+              Sermon Title 
+            </label>
+            <input 
+                type="text"
+                id="sermon-title"
+                placeholder="Enter sermon title"
+                required>
+          </div>
+          <div class="form-group">
+            <label for="sermon-speaker">
+              Speaker
+            </label>
+            <input
+                type="text"
+                id="sermon-speaker"
+                placeholder="Enter speaker name"
+                required>
+          </div>
+          <div class="form-group">
+            <label for="sermon-date">
+              Date
+            </label>
+            <input
+                type="date"
+                id="sermon-date"
+                required>
+          </div>
+          <div class="form-group">
+            <label for="sermon-audio">
+              Audio file
+            </label>
+            <input 
+                type="file"
+                id="sermon-audio"
+                accept="audio/*"
+                required>
+          </div>
+          <button type="submit" class="send-btn">
+            Add Sermon
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -825,6 +825,37 @@ html {
 .send-btn:hover {
   transform: translateY(-2px);
 }
+.admin {
+  padding: 90px 5%;
+}
+.admin-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+.admin-card {
+  background-color: var(--white-color);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+.admin-card h3 {
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+.admin-card p {
+  margin-bottom: 20px;
+}
+.admin-btn {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
 @media (max-width: 900px) {
   .focus-container {
     grid-template-columns: repeat(2, 1fr);
@@ -929,6 +960,9 @@ html {
     gap: 10px;
   }
   .contact-container {
+    grid-template-columns: 1fr;
+  }
+  .admin-container {
     grid-template-columns: 1fr;
   }
   .menu-toggle {
